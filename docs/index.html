@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Adebayo Muis">
+  <meta name="description" content="Lightweight javascript AOS library">
+  <meta name="theme" content="rgb(11, 12, 16)">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="ScrollJs" />
+  <meta property="og:description" content="A lightweight and flexible javascript AOS library" />
+  <meta property="og:image" content="./images/scrolljs.jpg" />
+  <meta property="og:url" content="https://scrolljs.vercel.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ScrollJs" />
+  <meta property="og:locale" content="en_US" />
+
+
+    <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ScrollJs" />
+  <meta name="twitter:description" content="A lightweight and flexible javascript AOS library" />
+  <meta name="twitter:image" content="./images/scrolljs.jpg" />
+  <meta name="twitter:site" content="@Charmingdc01" />
+  
+   <link rel="icon" href="./images/scrollJs.svg" type="image/svg">
+  <link rel="icon" href="./images/scrollJs.svg" sizes="32x32" type="image/svg">
+  <title>
+   ScrollJs 
+  </title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   </style>
+   
+   <script src="https://cdn.jsdelivr.net/gh/Charmingdc/ScrollJs@main/scroll.min.js"></script>
+ </head>
+ <body>
+  <header>
+   <nav>
+     <ul id="mobile-nav">
+      <li id="menu-button">
+       <div id="menu-icon">
+         <img src="./images/menu.svg" id="menu-icon" alt="Menu Icon">
+       </div>
+      </li>
+      <li>
+       <a href="https://github.com/Charmingdc/ScrollJs" target="_blank">
+        <img src="./images/github.svg" id="github-icon" alt="Github Icon">
+        <h1>Github</h1>
+       </a>
+      </li>
+     </ul>
+     
+     
+     <ul class="menu-bar">
+      <li>
+       <img src="./images/close.svg" id="close-icon" alt="Close Icon">
+      </li>
+      <li>
+       <a href="#installation">
+        Installation
+       </a>
+      </li>
+      <li>
+       <a href="#initialization">
+        Initialization
+       </a>
+      </li>
+      <li>
+       <a href="#method">
+        Methods
+       </a>
+      </li>
+      <li>
+       <a href="#demos">
+        Demos
+       </a>
+      </li>
+      <li>
+       <a href="https://github.com/Charmingdc/ScrollJs" target="_blank">
+        Support
+       </a>
+      </li>
+     </ul>
+   </nav>
+  </header>
+ 
+  
+  <main class="main">
+   <section id="intro">
+    
+    <img src="./images/scrollJs.svg" id="scrolljs-icon" alt="ScrollJs Icon">
+    <h1 id="scrolljs-name">
+     ScrollJs
+    </h1>
+    
+    <h2>
+     Easy scroll triggered animation library
+    </h2>
+    
+    <p>
+     ScrollJs is a lightweight and easy to use javascript library that allows you to add scroll triggered animations (AOS) with optional callback functions and also lazy load your images to make your website more optimize.
+    </p>
+    <p>
+     While other scroll triggered animation library offer predefined animation classes not giving full control and how you want your animations to display, ScrollJs allows you to use your already styled animation class.
+    </p>
+   </section>
+   
+   
+   <section id="installation">
+    <h1>
+     Installation
+    </h1>
+    
+    <h2 class="sub-tag">
+      - Use via cdn link
+    </h2>
+    <p>
+     Paste the code below in between the head tag in your html code
+    </p>
+    
+    
+    <div class="code-editor">
+      <div class="header">
+        <span class="title"> - HTML </span>
+      </div>
+     
+      <div class="editor-content">
+        <div class="code">
+         <span class="clr-0 first-tag">&lt;script src</span><span class="clr-1">=</span><span class="clr-2">"https://cdn.jsdelivr.net/gh/Charmingdc/ScrollJs@main/scroll.min.js"</span><span class="clr-0">&gt;&lt;/script&gt;</span>
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="sub-tag">
+      - Download the file
+    </h2>
+    <p>
+     Click <a href="https://github.com/Charmingdc/ScrollJs" target="_blank" style="color: rgb(4, 98, 220)" title="ScrollJs"><strong>here</strong></a> to download the javascript file from Github and place it in your project folder to start using scrollJs.
+    </p>
+   </section>
+   
+   
+   <section id="initialization">
+    <h1>
+     Initialization
+    </h1>
+    <p>
+     Simply add the following javascript code to Initialize scrollJs
+    </p>
+    
+    <div class="code-editor">
+      <div class="header">
+        <span class="title"> - JS </span>
+      </div>
+     
+      <div class="editor-content">
+        <div class="code">
+         
+          <span class="clr-0">const</span> observer = <span class="clr-0">new</span> <span class="clr-1">ScrollObserver()</span>
+           
+           <span class="cmt">
+            // here "observer" can be any variable name you prefer
+           </span>
+           
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="sub-tag">
+     - Optional parameters
+    </h2>
+    
+    <ul class="explanation">
+     <li>
+       <p>
+        <strong>animateOnce</strong> (<em>boolean</em>) : This is the first parameter that <strong>ScrollObserver()</strong> can take in. By default it is set to <strong>false</strong>, i.e elements that are being observe should always animate whenever they enter the viewport, if set to <strong>true</strong>, elements being observe will only animate the first time they enter the viewport.
+         To set the parameter:
+         </strong>
+       </p>
+       
+       <div class="code-editor">
+        <div class="header">
+         <span class="title"> - JS </span>
+        </div>
+     
+        <div class="editor-content">
+         <div class="code">
+        
+          <span class="clr-0">const</span> observer = <span class="clr-0">new</span> <span class="clr-1">ScrollObserver(<span class="clr-2">boolean</span>)</span>
+           
+           <span class="cmt">
+            // here replace "boolean" with either true or false
+           </span>
+           
+          </div>
+         </div>
+       </div>
+     </li>
+     <li>
+      <p>
+       <strong>observer options</strong> (<em>object</em>) : This is the second parameter you can pass in when you Initialize <strong>ScrollObserver()</strong>. It takes in your custom settings for the <strong>.observe()</strong> method as key-value pairs allowing you to set custom root, threshold, and rootMargin.
+        To set this parameter, the first parameter must be set i.e the animateOnce (boolean).
+      </p>
+      
+      <div class="code-editor">
+        <div class="header">
+         <span class="title"> - JS </span>
+        </div>
+     
+        <div class="editor-content">
+         <div class="code">
+          
+          <span class="clr-0">const</span> rootDiv =  <span class="clr-0">document</span>.<span class="clr-1">querySelector</span>(<span class="clr-2">'.your-container'</span>);
+          
+          <!-- new value starts -->
+          <span class="clr-0">const</span> observer = <span class="clr-0">new</span> <span class="clr-1">ScrollObserver</span>(<span class="clr-2">false</span>, {<span style="margin-left: 1.4rem">
+            root: rootDiv, 
+            threshold: 0.8,
+            rootMargin: '-10px',
+           </span>});
+           
+           <span class="cmt">
+            //Note: all observer options are optional
+            
+            // root: to set a use a custom container height as the viewport for the animations to trigger. set value to "null" to use default viewport
+            
+            //threshold specifies how much of the body the elements you are observing should be visible for the animation to trigger.
+            
+            //rootMargin to shrink your viewport height.
+           </span>
+           
+          </div>
+         </div>
+       </div>
+       
+       <p>
+        The table below shows the "observer options" name, type, default value, minimum and maximum values.
+       </p><br>
+       
+       <div class="table-holder">
+        <table>
+         <thead>
+          <tr>
+           <th> NAME </th>
+           <th> TYPE </th>
+           <th> DEFAULT </th>
+           <th> MIN </th>
+           <th> MAX </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td> root </td>
+           <td> element </td>
+           <td> brower viewport </td>
+           <td> ~ </td>
+           <td> ~ </td>
+          </tr>
+          <tr>
+           <td> threshold </td>
+           <td> number </td>
+           <td> 0.8 </td>
+           <td> 0 </td>
+           <td> 0.8 </td>
+         </tr>
+         <tr>
+          <td> rootMargin </td>
+          <td> string </td>
+          <td> -10px </td>
+          <td> -80px </td>
+          <td> 80px </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+
+     </li>
+    </ul>
+    
+    
+    <div class="note">
+      <div>
+       <img src="./images/info.svg" id="info-icon" alt="Info Icon">
+       <h3>
+        Note
+       </h3>
+      </div>
+      
+      <div>
+       <p>
+        When <strong>threshold</strong> is set up to <em>0.8</em>, <strong>rootMargin</strong> must be between the range of <em>'-10px'</em> to <em>'10px'</em> and when <strong>rootMargin</strong> is upto <em>'-70px'</em> or <em>'70px'</em>, <strong>threshold</strong> must not be more than <em>0.2</em> else your elements may not animate/show on scroll.
+       </p>
+      </div>
+    </div>
+   </section>
+   
+   
+   <section id="method">
+    <h1>
+     Methods
+    </h1>
+    <p>
+      ScrollJs has three main methods, <span class="methods">.observe()</span>, <span class="methods">.unobserve()</span>, <span class="methods">.disconnect()</span>
+    </p>
+    
+    <br>
+    <h2 class="sub-tag">
+     .observe();
+    </h2>
+    <p>
+     This method is use to observe elements position on the page and add an animation when the element being observed enter or leave the viewport.
+    </p>
+    
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+     <div class="editor-content">
+       <div class="code">
+        
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">element, callback, animationClass</span>);
+           
+          <span class="cmt">
+           // whenever you see "observer" replace it with the variable name you used when you initializated scrollJs
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    
+    <br>
+    <p>
+     The table below shows the parameters name, type and whether it is neccesary.
+    </p><br>
+    <div class="table-holder">
+     <table>
+      <thead>
+       <tr>
+        <th> NAME </th>
+        <th> TYPE </th>
+        <th> OPTIONAL </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td> element </td>
+        <td> element </td>
+        <td> No </td>
+       </tr>
+       <tr>
+        <td> callback </td>
+        <td> function </td>
+        <td> Yes </td>
+       </tr>
+       <tr>
+        <td> animationClass </td>
+        <td> string </td>
+        <td> No </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+  
+    
+    <br><br>
+    <p>
+     - The <strong>.observe()</strong> method can be called multiple times, to observe elements with different clases/id's and add different animations to trigger when the elements enter the viewport.
+    </p>
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+     <div class="editor-content">
+       <div class="code">
+          
+          <span class="clr-0">const</span> firstDiv =  <span class="clr-0">document</span>.<span class="clr-1">querySelector</span>(<span class="clr-2">'.first-div'</span>);
+          
+          <span class="clr-0">const</span> secDiv =  <span class="clr-0">document</span>.<span class="clr-1">querySelectorAll</span>(<span class="clr-2">'#sec-div'</span>);
+          
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">firstDiv, null, 'fadeinLeft'</span>);
+          
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">secDiv, null, 'zoomIn'</span>);
+           
+          <span class="cmt">
+           // the observe() method is called two times to apply different animations to different elements when they enter the viewport.
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    
+    <br><br>
+    <p>
+     - The first parameter (element) can also take in multiple elements with the same class name
+    </p>
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+     <div class="editor-content">
+       <div class="code">
+          
+          <span class="clr-0">const</span> yourDivs =  <span class="clr-0">document</span>.<span class="clr-1">querySelectorAll</span>(<span class="clr-2">'.your-divs'</span>);
+          
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">yourDivs, null, 'fadein'</span>);
+           
+          <span class="cmt">
+           // callback is set to null because we are not setting any function to trigger when the elements scroll into the viewport
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    
+    <br><br>
+    <p>
+     <strong>
+      - Lazy loading images with .observe(); method
+     </strong>
+    </p>
+    <p>
+     By setting a function for the callback parameter you can lazy load images resulting in more optimize websites.
+    </p>
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+     <div class="editor-content">
+       <div class="code">
+          <span class="cmt">
+           // get your image
+         </span>
+         <span class="clr-0">const</span> image =  <span class="clr-0">document</span>.<span class="clr-1">querySelector</span>(<span class="clr-2">'.your-img[data-src]'</span>);
+         
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">image,  (img) => {
+  img.src = img.dataset.src;},  'visible'</span>);
+           
+          <span class="cmt">
+           // note that "visible" is a style class in my css file to make the image show up when it comes into the viewport
+           
+           // the callback function load the image
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    
+    <div class="note">
+     <div>
+      <img src="./images/info.svg" id="info-icon" alt="Info Icon">
+      <h3>
+       Note
+      </h3>
+     </div>
+     <div>
+      <p>
+       set callback to null if no callback function is set, e.g observer.observe(element, null, 'show');
+      </p>
+     </div>
+    </div>
+      
+    <br><br><br>
+    <h2 class="sub-tag">
+     .unobserve();
+    </h2>
+    <p>
+     .unobserve() method only accept one parameter which is/are the element/elments to stop observing
+    </p><br>
+    
+    <p>
+     The .unobserve() method is useful when you want to unobserve a single element among different elements with the same class name that is currently being observe.
+    </p>
+    
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+     <div class="editor-content">
+       <div class="code">
+        
+          observer.<span class="clr-1">unobserve</span>(<span class="clr-2">element</span>);
+           
+          <span class="cmt">
+           // accept one parameter which is the element to unobserve
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    <br>
+    <p>
+     <strong>
+      use case: 
+     </strong>
+    </p>
+    
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+     <div class="editor-content">
+       <div class="code">
+          
+          <span class="clr-0">const</span> allDivs =  <span class="clr-0">document</span>.<span class="clr-1">querySelectorAll</span>(<span class="clr-2">'.all-divs'</span>);
+          <span class="cmt">// get all divs (elements) with the same class name</span>
+          
+          <span class="clr-0">const</span> specialDiv =  <span class="clr-0">document</span>.<span class="clr-1">querySelector</span>(<span class="clr-2">'#special-div'</span>);
+           <span class="cmt">// select one of the divs (elements) with a special ID</span>
+          
+          
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">allDivs, null, 'fadeinLeft'</span>);
+          <span class="cmt">// call the .observe() method on all the divs (elements)
+          </span>
+          
+          
+          observer.<span class="clr-1">unobserve</span>(<span class="clr-2">specialDiv</span>);
+          <span class="cmt">// unobserve one of the divs (elements) 
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    
+    
+    <br><br><br><br>
+    <h2 class="sub-tag">
+     .disconnect();
+    </h2>
+    <p>
+     The <strong>.disconnect()</strong> method stops ScrollObserver from tracking all currently observed elements. Once this method is called, the observer will no longer trigger any callbacks or apply animations for the elements it was previously observing.
+   </p><br>
+   <p>
+    After calling <strong>.disconnect()</strong>, the observer is effectively reset and no longer tracks any elements. To resume observing elements, you must explicitly call the <strong>.observe()</strong> method again and pass the elements you wish to track
+    </p>
+    
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+     <div class="editor-content">
+       <div class="code">
+        
+          observer.<span class="clr-1">disconnect</span>();
+           
+          <span class="cmt">
+           // the .disconnect() method does not take in any parameter
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    
+    <br>
+    <p>
+     <strong>
+      Use case:
+     </strong>
+    </p>
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+      <div class="editor-content">
+        <div class="code">
+          
+          <span class="clr-0">const</span> firstDiv =  <span class="clr-0">document</span>.<span class="clr-1">querySelector</span>(<span class="clr-2">'.first-div'</span>);
+          
+          <span class="clr-0">const</span> secDiv =  <span class="clr-0">document</span>.<span class="clr-1">querySelectorAll</span>(<span class="clr-2">'.sec-div'</span>);
+          
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">firstDiv, null, 'fadeinLeft'</span>);
+          
+          observer.<span class="clr-1">observe</span>(<span class="clr-2">secDiv, null, 'zoomIn'</span>);
+           
+           observer.<span class="clr-1">disconnect</span>();
+           
+          <span class="cmt">
+           // used to stop all current observers
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    <p>
+     All the .observe() method won't observe the elements unless they are explicitly re-observed after the disconnect() method
+    </p>
+    
+   </section>
+   
+   
+   <section id="demos">
+    <h1>
+     Demo
+    </h1>
+    <p>
+     Demo usage of all the methods for you to experiment with.
+    </p><br>
+    <p>
+     If the result of any of the CodePens didn't show up, simply tap the <strong>Rerun</strong> button.
+    </p><br><br>
+    
+    
+    <br>
+    <h2 class="sub-tag">
+     .observe() method
+    </h2>
+    <p>
+     Here is a demo of using the <strong>.observe()</strong> method with the default parameters
+    </p><br>
+    
+    <iframe height="340" style="width: 100%;" scrolling="no" title="ScrollJs observe method 1" src="https://codepen.io/Charmingdc/embed/jOgNjmV?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="eager" allowtransparency="true" allowfullscreen="true">
+    See the Pen <a href="https://codepen.io/Charmingdc/pen/jOgNjmV">
+  ScrollJs observe method 1</a> by Charmingdc (<a href="https://codepen.io/Charmingdc">@Charmingdc</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+    </iframe><br><br>
+    
+    <p>
+     Another demo using the <strong>.observe()</strong> method, but setting the <strong>animateOnce</strong> parameter to <strong>true</strong> when initializating <strong>ScrollObserver()</strong>
+    </p><br>
+    
+    <iframe height="340" style="width: 100%;" scrolling="no" title="ScrollJs observe method 2" src="https://codepen.io/Charmingdc/embed/KKOPjEX?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="eager" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Charmingdc/pen/KKOPjEX">
+  ScrollJs observe method 2</a> by Charmingdc (<a href="https://codepen.io/Charmingdc">@Charmingdc</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+   </iframe>
+    
+    
+    <br><br><br>
+    <h2 class="sub-tag">
+     .unobserve() method
+    </h2>
+    <p>
+     A demo usage of the <strong>.unobserve()</strong> method, here the fifth card won't display. Check the javascript tab for more info.
+    </p><br>
+    
+    <iframe height="340" style="width: 100%;" scrolling="no" title="ScrollJs unobserve method" src="https://codepen.io/Charmingdc/embed/QWeWbeb?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Charmingdc/pen/QWeWbeb">
+  ScrollJs unobserve method</a> by Charmingdc (<a href="https://codepen.io/Charmingdc">@Charmingdc</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+   </iframe>
+    
+    
+    <br><br><br>
+    <h2 class="sub-tag">
+     .disconnect() method
+    </h2>
+    <p>
+      The <strong>.disconnect()</strong> method simply clear all current observers and make them stop observing any elements that are being observed before.
+    </p><br>
+    <p>
+     Simply call the <strong>.disconnect()</strong> method without any parameter to stop all observers from observing the current elements they are observing.
+    </p>
+    
+    <div class="code-editor">
+     <div class="header">
+       <span class="title"> - JS </span>
+     </div>
+     
+      <div class="editor-content">
+        <div class="code">
+           
+           observer.<span class="clr-1">disconnect</span>();
+           
+          <span class="cmt">
+           // used to stop all current observers
+          </span>
+           
+       </div>
+     </div>
+    </div>
+    
+    
+   </section>
+   
+  </main>
+   
+  
+  <footer>
+   
+   <h3>
+    Support the project
+   </h3>
+   <p>
+    If you like scrollJs, please consider Supporting the project by giving it a star on Github.
+   </p><br>
+   
+   <div id="links">
+    <a href="#installation"> Installation </a>
+    <a href="#initialization"> Initialization </a>
+    <a href="#method"> Methods </a>
+    <a href="#demos"> Demos </a>
+    <a href="https://github.com/Charmingdc/ScrollJs" target="_blank"> Github </a>
+   </div><br>
+   
+   <p>
+    Developed with '♥️' by Adebayo Muis<br> (Charmingdc)
+   </p>
+  </footer>
+  
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <script src="/script.js" defer="true"></script>
+ </body>
+</html>
