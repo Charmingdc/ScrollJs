@@ -21,3 +21,8 @@ Developed by **Adebayo Muis (Charmingdc)**
 ## Support 
 
 You can support the project by giving it a star ⭐ 
+
+
+## What to expect 
+
+Optional use of predefined css animations classes.
