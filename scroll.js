@@ -10,13 +10,16 @@ class ScrollObserver {
         this.animateOnce = animateOnce;
         this.observers = [];
     }
-
+    
+   // create the observe method 
     observe(elements, callback, animationClass) {
       
+      // incase a single element is passed in, it convert it to an array so array methods can be used on it
        if (!elements || typeof elements[Symbol.iterator] !== 'function') {
            elements = [elements];
         }
         
+        // created a new intersection observer 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
               if (entry.isIntersecting) {
@@ -48,10 +51,13 @@ class ScrollObserver {
             });
         }, this.options);
         
+        
+        // loop through all elements and observe each of them 
         elements.forEach(element => {
           observer.observe(element);
         });
         
+        // push both the observer and elements it's observing to observers array 
         this.observers.push( {observer, elements} )
     }
     
