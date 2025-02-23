@@ -81,7 +81,7 @@ ScrollObserver().observe(cards, null, 'fade-in')
 or store the `ScrollObserver` instance to a variable 
 
 ``` js
-const observer = ScrollObserver()
+const observer = new ScrollObserver()
 observer.observe(cards, null, 'fade-in');
 ```
 

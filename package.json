@@ -1,6 +1,6 @@
 {
   "name": "@charmingdc/scrolljs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight JavaScript library for observing scroll-based events and triggering animations.",
   "main": "dist/scroll.umd.js",
   "module": "dist/scroll.esm.js",
@@ -24,6 +24,7 @@
   ],
   "author": "Charmingdc",
   "license": "MIT",
+  "homepage": "https://scrolljs.vercel.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/Charmingdc/ScrollJs.git"
