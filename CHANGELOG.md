@@ -2,13 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.2] - 2025-02-23
+## [1.0.3] - 2025-02-23
 ### Changed
 - Updated `README.md` to correct usage error if installed from a package manager
 - Update `Package.json` to reflect the official documentation website as the homepage url on npm package page
-
-### Added
-- Created `CHANGELOG.md` to track changes for the project.
 
 
 ## [1.0.1] - 2025-01-15
