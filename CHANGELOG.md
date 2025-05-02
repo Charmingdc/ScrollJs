@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
+<<<<<<< HEAD
 ## [2.0.3] - 2025-05-01
 ### Changed
 - Updated `src/scrolljs` to automatically add hidden base classes to elements when built-in animation classes are used
@@ -13,13 +14,11 @@ All notable changes to this project will be documented in this file.
 
 
 
-## [1.0.2] - 2025-02-23
+
+## [1.0.3] - 2025-02-23
 ### Changed
 - Updated `README.md` to correct usage error if installed from a package manager
 - Updated `Package.json` to reflect the official documentation website as the homepage url on npm package page
-
-### Added
-- Created `CHANGELOG.md` to track changes for the project.
 
 
 
