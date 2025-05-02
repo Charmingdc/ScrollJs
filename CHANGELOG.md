@@ -2,8 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
-<<<<<<< HEAD
-## [2.0.3] - 2025-05-02
+
+## [2.0.0] - 2025-05-02
 ### Changed
 - Updated `src/scrolljs` to automatically add hidden base classes to elements when built-in animation classes are used
 - Updated `Package.json` to bundle `scrolljs.css` file to `dist` folder to allow importation
