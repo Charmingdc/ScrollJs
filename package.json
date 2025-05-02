@@ -1,6 +1,6 @@
 {
   "name": "@charmingdc/scrolljs",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "A lightweight JavaScript library for observing scroll-based events and triggering animations.",
   "main": "dist/scroll.umd.js",
   "module": "dist/scroll.esm.js",
