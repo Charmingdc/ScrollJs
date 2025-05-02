@@ -13,14 +13,25 @@
   },
   "files": [
     "dist",
+    "dist/scrolljs.css",
     "README.md"
   ],
   "keywords": [
     "scroll",
     "observer",
+    "scroll trigger",
     "animations",
+    "scroll animation",
+    "animate on scroll",
+    "viewport animations",
+    "on scroll animations",
+    "intersection observer",
+    "css",
     "javascript",
-    "library"
+    "scroll effects",
+    "library",
+    "aos alternative",
+    "lightweight animation library"
   ],
   "author": "Charmingdc",
   "license": "MIT",
@@ -33,8 +44,9 @@
     "url": "https://github.com/Charmingdc/ScrollJs/issues"
   },
   "devDependencies": {
-    "rollup": "^3.0.0",
+    "@rollup/plugin-commonjs": "^24.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
-    "@rollup/plugin-commonjs": "^24.0.0"
+    "rollup": "^3.0.0",
+    "rollup-plugin-copy": "^3.5.0"
   }
 }

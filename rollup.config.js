@@ -1,5 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import copy from 'rollup-plugin-copy';
 
 export default {
   input: 'src/scroll.js',
@@ -17,5 +18,10 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
+    copy({
+      targets: [
+        { src: 'src/scrolljs.css', dest: 'dist' }
+      ],
+    }),
   ],
 };

@@ -1,0 +1,82 @@
+/* Base Hidden Classes */
+.scrolljs-hidden-up {
+  transform: translateY(1rem); /* Hide element below */
+  opacity: 0; /* Start hidden with opacity */
+}
+
+.scrolljs-hidden-down {
+  transform: translateY(-1rem); /* Hide element above */
+  opacity: 0; /* Start hidden with opacity */
+}
+
+.scrolljs-hidden-left {
+  transform: translateX(1rem); /* Hide element off to the right */
+  opacity: 0; /* Start hidden with opacity */
+}
+
+.scrolljs-hidden-right {
+  transform: translateX(-1rem); /* Hide element off to the left */
+  opacity: 0; /* Start hidden with opacity */
+}
+
+.scrolljs-hidden-zoom {
+  transform: scale(0.8); /* Scale down element */
+  opacity: 0; /* Start hidden with opacity */
+}
+
+/* Fade-In Animations */
+.scrolljs-fade-in-up {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.scrolljs-fade-in-down {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.scrolljs-fade-in-left {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.scrolljs-fade-in-right {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.scrolljs-fade-in-zoom {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Scroll-In Animations (Without Opacity Changes) */
+.scrolljs-scroll-in-up {
+  transform: translateY(0);
+  transition: transform 0.6s ease-out;
+}
+
+.scrolljs-scroll-in-down {
+  transform: translateY(0);
+  transition: transform 0.6s ease-out;
+}
+
+.scrolljs-scroll-in-left {
+  transform: translateX(0);
+  transition: transform 0.6s ease-out;
+}
+
+.scrolljs-scroll-in-right {
+  transform: translateX(0);
+  transition: transform 0.6s ease-out;
+}
+
+.scrolljs-scroll-in-zoom {
+  transform: scale(1);
+  transition: transform 0.6s ease-out;
+}
