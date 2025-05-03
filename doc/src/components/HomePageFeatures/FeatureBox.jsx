@@ -3,9 +3,10 @@ import styles from './index.module.css';
 const FeatureBox = ({feature}) => {
  return (
   <div className={styles.featureBox}>
-   <p> { feature.title } </p>
+   <div> { feature.emoji } </div>
+   
+   <h3> { feature.title } </h3>
    <p> { feature.description } </p>
-   <p> { feature.emoji } </p>
   </div>
  )
 }

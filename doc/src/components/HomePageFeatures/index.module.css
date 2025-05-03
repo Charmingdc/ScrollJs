@@ -1,7 +1,43 @@
+:root {
+ --custom-shade: rgb(230, 230, 230);
+}
+
+[data-theme='dark'] {
+ --custom-shade: rgb(20, 20, 20);
+}
+
 .featureBox {
- color: green;
+ width: 17rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 1rem;
+}
+
+.featureBox > div {
+ width: 4rem;
+ height: 4rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.5rem;
+ background-color: var(--custom-shade);
+ border-radius: 1rem;
+ margin-bottom: 1rem;
+}
+
+.featureBox > h3 {
+ margin-bottom: .5rem;
 }
 
 .featureContainer {
- color: blue;
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding: 1rem 5%;
+ margin-top: 2rem;
 }

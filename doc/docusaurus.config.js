@@ -1,31 +1,31 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ScrollJs',
-  tagline: 'A lightweight and flexible javascript AOS library',
+  tagline: 'A lightweight and flexible javascript scroll-triggered animation library with support for both custom and built-in css animations classess.',
   favicon: 'img/scrollJs.svg',
   url: 'https://scrolljs.vercel.app',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-  organizationName: 'Charmingdc', // Usually your GitHub org/user name.
+  organizationName: 'Charmingdc',
   projectName: 'ScrollJs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  // Added Inter Google Font
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap',
+      type: 'text/css',
+    },
+  ],
 
   presets: [
     [
@@ -89,12 +89,12 @@ const config = {
               },
               {
                 label: 'Getting Started',
-                to: '/docs/getting-started'
+                to: '/docs/category/getting-started',
               },
               {
                 label: 'Methods',
-                to: '/docs/methods',
-              }
+                to: '/docs/category/methods',
+              },
             ],
           },
           {

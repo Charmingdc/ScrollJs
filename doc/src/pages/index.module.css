@@ -2,6 +2,17 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+ 
+ * {
+  font-family: 'Poppins', Sans-Serif;
+ }
+ 
+ main {
+  width: 100vw;
+ }
+ 
 .heroSection {
  width: 100%;
  display: flex;
@@ -15,6 +26,9 @@
 
 .heroSection h1 {
  margin-bottom: .5rem;
+}
+.heroSection p {
+ font-size: 1rem;
 }
 
 .buttons {

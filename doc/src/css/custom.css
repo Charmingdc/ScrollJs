@@ -6,7 +6,9 @@
 
 /* You can override the default Infima variables here. */
 /* Updated to match logo theme (blue-based) */
+
 :root {
+  --ifm-font-family-base: 'Poppins', sans-serif;
   --ifm-color-primary: #0028ff; /* Main brand blue */
   --ifm-color-primary-dark: #0024e6; /* Slightly darker for hover effects */
   --ifm-color-primary-darker: #001fcc; /* Even darker shade */
@@ -21,6 +23,8 @@
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 /* Updated dark theme to stay consistent with brand blue while improving contrast */
 [data-theme='dark'] {
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-heading-font-family: 'Poppins', sans-serif;
   --ifm-color-primary: #446dff; /* Slightly lighter base for dark backgrounds */
   --ifm-color-primary-dark: #3c61e6;
   --ifm-color-primary-darker: #3557cc;

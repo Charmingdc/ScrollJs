@@ -4,7 +4,7 @@ import styles from './style.module.css';
 const LatestUpdateModal = ({update}) => {
  return (
   <div className={clsx(styles.updateModal)}>
-   <p><strong> { update } </strong></p>
+   <marquee> { update } </marquee>
   </div>
  )
 }
