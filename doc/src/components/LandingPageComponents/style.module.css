@@ -1,0 +1,9 @@
+.updateModal {
+ width: 100vw;
+ height: 2.5rem;
+ text-align: left;
+ padding-inline: 1rem;
+ padding-top: .4rem;
+ background-color: var(--ifm-color-primary);
+ margin-block: -2rem 2rem;
+}

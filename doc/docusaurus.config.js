@@ -13,24 +13,15 @@ const config = {
   title: 'ScrollJs',
   tagline: 'A lightweight and flexible javascript AOS library',
   favicon: 'img/scrollJs.svg',
-
-  // Set the production url of your site here
   url: 'https://scrolljs.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Charmingdc', // Usually your GitHub org/user name.
-  projectName: 'ScrollJs', // Usually your repo name.
+  projectName: 'ScrollJs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -64,8 +55,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/scrolljs.jpg',
       navbar: {
         title: 'ScrollJs',
         logo: {
@@ -97,6 +87,14 @@ const config = {
                 label: 'Introduction',
                 to: '/docs/intro',
               },
+              {
+                label: 'Getting Started',
+                to: '/docs/getting-started'
+              },
+              {
+                label: 'Methods',
+                to: '/docs/methods',
+              }
             ],
           },
           {
