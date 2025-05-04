@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 After adding **ScrollJs** via CDN or package manager, you can start using it right away. The library exports a `ScrollObserver` class—just instantiate it to begin observing elements.
 
-:::note [**NOTE**]
+:::note **NOTE**
 If you included **ScrollJs** via CDN, you don’t need to import: simply create a new instance of  `ScrollObserver()` wherever you like.
 :::
 
@@ -34,7 +34,7 @@ Then, create a new instance of `ScrollObserver`:
 const observer = new ScrollObserver();
 ```
 
-:::tip [**Tip**]
+:::tip **Tip**
 You can name the variable whatever you like, just make sure to assign the instance to a variable.
 :::
 
@@ -67,13 +67,13 @@ const observer = new ScrollObserver(false);
 - **Default:** `{ root: null, threshold: 0, rootMargin: '0px' }`  
 - **Description:** `observerOptions` are totally optional, you can skip it when initializing `ScrollObserver()`.
 
-| Property     | Type               | Default | Description                                                                              |
-| ------------ | ------------------ | ------- | ---------------------------------------------------------------------------------------- |
-| `root`       | Element \| null    | `null`  | Container to use as viewport. Use `null` for the browser viewport.                      |
-| `threshold`  | number \| number[] | `0`     | Percentage of target’s visibility required to trigger the callback (0 to 1).             |
-| `rootMargin` | string             | `0px`   | Offsets applied to the root’s bounding box (e.g., `"-10px 0px 20px 0px"`).               |
+| NAME         | TYPE                        | DEFAULT          | MIN     | MAX     | DESCRIPTION                                                                 |
+|--------------|-----------------------------|------------------|---------|---------|-----------------------------------------------------------------------------|
+| `root`       | Element OR browser viewport | browser viewport | ~       | ~       | The element that is used as the viewport for checking visibility.          |
+| `threshold`  | number                      | 0.8              | 0       | 0.8     | Percentage of target’s visibility required to trigger the callback.        |
+| `rootMargin` | string                      | -10px            | -80px   | 80px    | Margin around the root. Can be used to grow or shrink the root's bounding box. |          |
 
-:::note [**Note**]
+:::note **Note**
 To set `observerOptions`, you must pass both parameters e.g., `new ScrollObserver(animateOnceValue, observerOptions)`
 :::
 
@@ -86,9 +86,12 @@ const observer = new ScrollObserver(false, {
   rootMargin: '-10px',
 });
 ```
+:::note **NOTE**
+When `threshold` is set to **0.8**, `rootMargin` should stay within **'-10px'** to **'10px'** to ensure reliable animations.  
+If `rootMargin` reaches values like **'-70px'** or **'70px'**, then `threshold` must not exceed **0.2** — otherwise, elements might fail to animate or appear on scroll.
+:::
 
-
-### 4. Summary
+### 3. Summary
 
 1. **Import** or include via CDN.  
 2. **Instantiate** with optional `animateOnce` and `observerOptions`.  
