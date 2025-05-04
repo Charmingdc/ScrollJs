@@ -19,14 +19,6 @@ const config = {
     locales: ['en'],
   },
 
-  // Added Inter Google Font
-  stylesheets: [
-    {
-      href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap',
-      type: 'text/css',
-    },
-  ],
-
   presets: [
     [
       'classic',

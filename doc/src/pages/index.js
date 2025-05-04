@@ -14,13 +14,7 @@ const HomepageHeader = () => {
     <header className={styles.heroSection}>
       <LatestUpdateModal update='v2.0.0 is out with built-in css support 🎉' />
       
-      <div className="container">
-        <img
-         src='./img/scrollJs.svg'
-         width='120px'
-         height='120px'
-         alt='ScrollJs' />
-         
+      <div className={styles.container}>
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>

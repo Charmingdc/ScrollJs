@@ -1,16 +1,21 @@
 :root {
- --custom-shade: rgb(230, 230, 230);
+ --custom-shade: rgb(240, 240, 240);
+ --custom-shade-2: rgb(225, 225, 225);
 }
 
 [data-theme='dark'] {
  --custom-shade: rgb(20, 20, 20);
+ --custom-shade-2: rgb(30, 30, 30);
 }
 
 .featureBox {
- width: 17rem;
+ width: 19.5rem;
  display: flex;
  flex-direction: column;
  align-items: center;
+ padding: 1rem;
+ background-color: var(--custom-shade);
+ border-radius: 1rem;
  margin: 1rem;
 }
 
@@ -22,9 +27,10 @@
  align-items: center;
  justify-content: center;
  font-size: 1.5rem;
- background-color: var(--custom-shade);
+ background-color: var(--custom-shade-2);
+ opacity: 0.8;
  border-radius: 1rem;
- margin-bottom: 1rem;
+ margin-block: 1rem;
 }
 
 .featureBox > h3 {
@@ -38,6 +44,6 @@
  align-items: center;
  justify-content: center;
  text-align: center;
- padding: 1rem 5%;
+ padding-block: 1rem;
  margin-top: 2rem;
 }

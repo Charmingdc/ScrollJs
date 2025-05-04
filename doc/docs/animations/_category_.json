@@ -1,6 +1,6 @@
 {
-  "label": "Live Demos",
-  "position": 5,
+  "label": "Built-in animation classes",
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Live examples of using ScrollJs"

@@ -1,5 +1,161 @@
 ---
 sidebar_position: 1
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-# observe() method
+# observe()
+
+The `observe()` method is the most important method provided by the `ScrollObserver()` class. It's use to observe elements position on the page and add an animation when the element being observed enter or leave the viewport.
+
+Here's a basic syntax on how to use it to observe elements and trigger animations on entering viewport:
+
+```js 
+ observer.observe(elements, callback, cssAnimationClass);
+```
+:::note note
+The `observer` here is the variable we created earlier when we create a new instance of the `ScrollObserver` class. You can call it anything you want.
+:::
+
+
+
+## **observer() params**
+Here's a breakdown of the `observer()` method parameters:
+
+### 1. element
+ - **Type:** `element/elements`
+ - **Optional:** `false`
+ - **Description:** These are the html `elements` to observe and animate when they enter the viewport. Can be a **single** or **multiple** elements.
+
+<Tabs>
+ <TabItem value="single-element" label="Single Element" default>
+   ```js
+   observer.observe(document.querySelector('.my-card'), null, cssAnimationClass);
+  ```
+ </TabItem>
+ <TabItem value="multiple-elements" label="Multiple Elements">
+  ```js
+   observer.observe(document.querySelectorAll('.my-cards'), null, cssAnimationClass);
+  ```
+ </TabItem>
+</Tabs>
+
+You can also get your elements like this:
+
+<Tabs>
+ <TabItem value="single-element" label="Single Element" default>
+  ```js
+   const myCard = document.querySelector('.my-card');
+ 
+   observer.observe(myCard, null, cssAnimationClass);
+  ```
+ </TabItem>
+ <TabItem value="multiple-elements" label="Multiple Elements">
+  ```js
+   const myCards = document.querySelectorAll('.my-cards');
+ 
+   observer.observe(myCards, null, cssAnimationClass);
+  ```
+ </TabItem>
+</Tabs>
+
+
+
+### 2. callback function (optional)
+ - **Type:** `callback function`
+ - **Optional:** `true`
+ - **Description:** An optional callback function to be called when currenlty observed elements enter the viewport. Replace with `null` when you don't need a callback function
+ 
+<Tabs>
+ <TabItem value="with-callback-func" label="With Callback Function" default>
+  ```js
+   observer.observe(elements, (el, index) => console.log(`hello from element at ${index}`), cssAnimationClass);
+    
+   // Logs 'hello from element at index of the element' to the console for each element that enters the viewport
+  ```
+ </TabItem>
+ <TabItem value="without-callback-func" label="Without Callback Function">
+  ```js
+   observer.observe(elements, null, cssAnimationClass);
+  ```
+ </TabItem>
+</Tabs>
+
+:::note note
+ The second parameter i.e `index` is optional and can be totally omitted when using the callback function.
+:::
+
+Sounds cool and all, but do I really need this? 🤔 Yes, you absolutely do! 🙌
+
+You can get super creative with the callback function — it’s not just for triggering animations. For example, here’s how you can lazy load images effortlessly: 📸💡
+
+```js
+ const images = document.querySelectorAll('.my-imgs[data-src]');
+         
+ observer.observe(images, (img) => {img.src = img.dataset.src}, cssAnimationClass);
+```
+
+Boom — smooth and optimized loading without extra libraries.
+Minimal code, maximum impact ⚡
+
+Use it your way. Get playful. Get productive!
+ 
+### 3. Css animation class
+ - **Type:** `string`
+ - **Optional:** `false`
+ - **Description:** This the css class that will be applied to elements you are observing once they enter the viewport
+ 
+ Here's how you can animate elements by applying new css class to them once they are visible in the viewport:
+
+ 
+```html title="my-website/index.html"
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Scroll Observer Demo </title>
+  <Link rel="stylesheet" href="./style.css" />
+ </head>
+ 
+ <body>
+  <div class="base-class my-card"></div>
+  <div class="base-class my-card"></div>
+  <div class="base-class my-card"></div>
+  <div class="base-class my-card"></div>
+  <div class="base-class my-card"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.0/dist/scroll.esm.min.js" type="module"></script>
+  <script src="./script.js" type="module"></script>
+ </body>
+</html>
+```
+
+ ```css title="./style.css"
+  .base-class {
+   opacity: 0;
+   transform: translateY(1rem);
+   transition: 0.6s ease;
+  }
+  
+  .animate-class {
+   opacity: 1;
+   transform: translateY(0);
+  }
+ ```
+ 
+ ```js title="./script.js"
+ const observer = new ScrollObserver();
+ 
+ observer.observe(document.querySelectorAll('.my-card'), (el) => console.log(`I'm visible`), '.animate-class');
+ ```
+ 
+**And just like that — boom!**  
+Your elements are now being observed and **animated** as soon as they enter the viewport! ✨
+
+Don’t feel like writing custom CSS animations? **Perfect.** Built-in animation classes are now supported in **`v2.0.0`**! 🎉  
+
+Just apply them — no extra setup needed.  
+**Less hassle, more motion.** ⚡  
+
+[**→ See the guide on using built-in CSS animations**](../category/built-in-animation-classes)
