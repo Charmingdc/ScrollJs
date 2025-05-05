@@ -85,8 +85,20 @@ const config = {
               },
               {
                 label: 'Methods',
-                to: '/docs/category/methods',
+                to: '/docs/category/core-methods',
               },
+              {
+                label: 'Live Demos',
+                to: '/docs/category/live-demos',
+              },
+              {
+                label: 'Built-in Animations Classes',
+                to: '/docs/category/built-in-animation-classes',
+              },
+              {
+                label: 'Playground',
+                to: '/docs/category/playground',
+              }
             ],
           },
           {
@@ -97,13 +109,21 @@ const config = {
                 to: '/blog',
               },
               {
+                label: 'X (Twitter)',
+                href: 'https://x.com/Charmingdc01',
+              },
+              {
+                label: 'NPM page',
+                href: 'https://www.npmjs.com/package/@charmingdc/scrolljs',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/Charmingdc/ScrollJs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ScrollJs, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ScrollJs, Inc. Built with '♥️' & Docusaurus by Charmingdc`,
       },
       prism: {
         theme: prismThemes.github,

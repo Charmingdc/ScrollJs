@@ -25,7 +25,7 @@ const FeaturesContainer = () => {
    },
    {
      title: 'Observe & Unobserve Elements',
-     description: 'Easily observe elements by class and unobserve them by ID when needed.',
+     description: 'Easily observe elements by class and unobserve them by ID or special CLASS when needed.',
      emoji: '🔍',
    },
    {

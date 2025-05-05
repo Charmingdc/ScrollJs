@@ -2,4 +2,53 @@
 sidebar_position: 3
 ---
 
-# disconnect() method
+# `disconnect()` Method
+
+The `disconnect()` method is your **master switch** 🔌 — it **stops observing all elements** that were previously passed to the `observe()` method.
+
+This can be useful when:
+- You no longer need scroll-based animations.
+- You're switching pages or reloading new content.
+- You want to reset everything and start fresh. ♻️
+
+---
+
+### Syntax
+
+```js
+observer.disconnect();
+```
+
+Once called, it will:
+- Disconnect all `ScrollObserver` instances created by your observer.
+- Clear the internal list of tracked elements.
+- Stop triggering animations and callbacks.
+
+---
+
+### Example: Disconnecting All Observers
+
+```js
+const observer = new ScrollObserver();
+
+const cards = document.querySelectorAll('.card');
+observer.observe(cards, (el) => {
+  console.log('Card visible:', el);
+}, 'fadeinUp');
+
+// Later, when you want to stop observing:
+observer.disconnect(); // All observation ends here
+```
+
+After calling `disconnect()`, none of the elements will be observed anymore — they’re completely unlinked from the scroll behavior.
+
+---
+
+### Final Thought
+
+Need a clean reset? 🤔  
+Want to prevent memory leaks or unintended animations?  
+Call `disconnect()` and you're back in control! ✅
+
+And that's all to using `ScrollJs` in your project, pretty easy?  
+You can also explore other sections like using `ScrollJs` built-in CSS animation classes for faster usage, skipping the manual class setup! 🎉

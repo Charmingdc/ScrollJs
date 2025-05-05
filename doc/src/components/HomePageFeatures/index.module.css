@@ -9,11 +9,13 @@
 }
 
 .featureBox {
- width: 19.5rem;
+ width: 20rem;
  display: flex;
  flex-direction: column;
- align-items: center;
- padding: 1rem;
+ align-items: flex-start;
+ justify-content: center;
+ text-align: left;
+ padding: 1.5rem 2rem;
  background-color: var(--custom-shade);
  border-radius: 1rem;
  margin: 1rem;
@@ -26,7 +28,7 @@
  flex-direction: column;
  align-items: center;
  justify-content: center;
- font-size: 1.5rem;
+ font-size: 1.8rem;
  background-color: var(--custom-shade-2);
  opacity: 0.8;
  border-radius: 1rem;
@@ -45,5 +47,5 @@
  justify-content: center;
  text-align: center;
  padding-block: 1rem;
- margin-top: 2rem;
+ margin-top: 1.5rem;
 }
