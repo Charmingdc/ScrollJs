@@ -11,67 +11,63 @@ class ScrollObserver {
     this.observers = [];
   }
 
-  // Create the observe method
   observe(elements, callback, animationClass) {
-    // In case a single element is passed in, convert it to an array so array methods can be used
     if (!elements || typeof elements[Symbol.iterator] !== 'function') {
       elements = [elements];
     }
 
-    // Create a new intersection observer
+    const elementsArray = Array.from(elements);
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
+        const element = entry.target;
+        const index = elementsArray.indexOf(element);
+
         if (entry.isIntersecting) {
           if (animationClass) {
             if (animationClass.startsWith('scrolljs-')) {
-              this._removeHiddenClass(entry.target, animationClass);
+              this._removeHiddenClass(element, animationClass);
             }
-
-            entry.target.classList.add(animationClass);
+            element.classList.add(animationClass);
           } else {
             console.error(`Error: animation class name is not defined`);
           }
 
           if (callback) {
-            callback(entry.target);
+            callback(element, index);
           }
         }
 
         if (!this.animateOnce && !entry.isIntersecting) {
           if (animationClass) {
-            entry.target.classList.remove(animationClass);
-
+            element.classList.remove(animationClass);
             if (animationClass.startsWith('scrolljs-')) {
-              this._addHiddenClass(entry.target, animationClass);
+              this._addHiddenClass(element, animationClass);
             }
           } else {
             console.error(`Error: animation class name is not defined`);
           }
 
           if (callback) {
-            callback(entry.target);
+            callback(element, index);
           }
         }
       });
     }, this.options);
 
-    // Loop through all elements and observe each of them
-    elements.forEach(element => {
+    elementsArray.forEach(element => {
       observer.observe(element);
     });
 
-    // Push both the observer and elements it's observing to the observers array
-    this.observers.push({ observer, elements });
+    this.observers.push({ observer, elements: elementsArray });
   }
 
   unobserve(element) {
     let found = false;
 
-    // Loop through each observer to check if it observes the element
     this.observers.forEach(({ observer, elements }) => {
       const elementsArray = Array.from(elements);
 
-      // Check if the element exists in the current observer's elements array
       if (elementsArray.includes(element)) {
         observer.unobserve(element);
         if (element.id) {
@@ -94,7 +90,6 @@ class ScrollObserver {
     this.observers = [];
   }
 
-  // Private methods for handling hidden classes
   _addHiddenClass(element, animationClass) {
     const directionMatch = animationClass.match(/-(up|down|left|right|zoom)/);
     const direction = directionMatch ? directionMatch[1] : null;

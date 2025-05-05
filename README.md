@@ -1,104 +1,125 @@
-<p align="center">
-  <img src="https://github.com/Charmingdc/ScrollJs/blob/0dd4bd3f4113ba3e67ee2f0af75252fde3b43bf9/docs/images/scrollJs.svg" width="100px" height="100px" alt="ScrollJs icon" />
-</p>
+# ScrollJs: Animate-on-Scroll JavaScript Library 🌊
 
-<h1 align="center"> ScrollJs </h1>
-<p align="center"> ScrollJs is a lightweight and easy to use javascript library that allows you to add scroll triggered animations (AOS) with optional callback functions and also lazy load your images to make your website more optimize.
-</p>
+A lightweight JavaScript library to trigger animations and effects when elements scroll into view. Control your animations with custom CSS or built-in classes! ✨
 
-<p align="center">
-While other scroll triggered animation library offer predefined animation classes not giving full control and how you want your animations to display, ScrollJs allows you to use your already styled animation class.
-</p>
+## Project Overview
 
-# Installation 
+ScrollJs is designed to be easy to use, flexible, and performant. It provides a simple API to observe elements and trigger animations as users scroll down the page. Unlike other libraries, ScrollJs allows you to leverage your own CSS animation classes, giving you full control over animation styles.
 
-## Browser
-A simple and fast way to get started is to include this script on your page
+## Installation
 
-``` html
-<script src="https://cdn.jsdelivr.net/gh/Charmingdc/ScrollJs@main/scroll.min.js"></script>
-```
-This will create the global variable `ScrollObserver`
+Get started by installing ScrollJs using npm or yarn:
 
-## Module
-``` bash
-$ npm install @charmingdc/scrolljs
+```bash
+git clone git@github.com:Charmingdc/ScrollJs.git
 ```
 
-
-### CommonJs
-``` js
-const ScrollObserver = require('@charmingdc/scrolljs')
+### Via NPM
+```bash
+npm install @charmingdc/scrolljs
 ```
 
-### ES2015
-``` js
-import ScrollObserver from '@charmingdc/scrolljs'
+### Via Yarn
+```bash
+yarn add @charmingdc/scrolljs
 ```
 
-<br />
+Or, include it directly from a CDN:
 
-# Usage
+```html
+<link rel="stylesheet" href="dist/scrolljs.css">
+<script src="dist/scroll.umd.js"></script>
+```
 
-Installation provides us with the constructor function `ScrollObserver` Calling this function returns the ScrollObserver instance, the “brain” behind the magic.
-> ScrollObserver employs the singleton pattern; no matter how many times the constructor is called, it will always return the same instance. This means we can call it anywhere, worry-free.
+## Usage
 
-There’s a lot we can do with this instance, but most of the time we’ll be using the observer() method to create animation. Fundamentally, this is how to use ScrollObserver:
+### Basic Setup
 
-`HTML`
-``` html
-<div class='card'>
- Demo Card
+1.  **Import:** Import ScrollObserver into your project.
+
+    ```javascript
+    import ScrollObserver from '@charmingdc/scrolljs';
+    ```
+
+2.  **Initialize:** Create a new ScrollObserver instance.
+
+    ```javascript
+    const observer = new ScrollObserver();
+    ```
+
+3.  **Observe Elements**: Use the `.observe()` method to start tracking elements.
+
+    ```javascript
+    const element = document.querySelector('.my-element');
+    observer.observe(element, null, 'fade-in-up');
+    ```
+
+### Options
+
+Customize ScrollJs with the following options:
+
+<details>
+<summary>Click to expand options</summary>
+
+   - **`animateOnce`**: Animate elements only once.
+   - **`root`**: Specify a container for scroll observation.
+   - **`threshold`**: Percentage of element visibility to trigger animation.
+   - **`rootMargin`**: Margin around the `root` element.
+</details>
+
+### Examples
+
+Here's a simple example of using ScrollJs with a fade-in animation:
+
+```html
+<div class="my-element scrolljs-hidden scrolljs-fade-in-up">
+  <h2>Hello ScrollJs!</h2>
+  <p>This element will fade in as you scroll.</p>
 </div>
 ```
 
-<br />
-
-`CSS`
-``` css
-.card {
-  width: 4rem;
-  height: 6rem;
-  background-color: blue;
-  border-radius: 1rem;
-  transform: translateX(-1rem);
-  transition: 200ms;
-}
-
-.fade-in {
-  transform: translateX(0rem);
-  transition: 200ms;
-} /* Animation to display when element enters viewport */
+```javascript
+const observer = new ScrollObserver();
+const element = document.querySelector('.my-element');
+observer.observe(element, null, 'scrolljs-fade-in-up');
 ```
 
-<br />
+For more detailed usage, check the [Documentation](https://scrolljs.vercel.app/docs/intro).
 
-`JAVASCRIPT`
-``` js
-const cards = document.querySelectorAll('.card');
-ScrollObserver().observe(cards, null, 'fade-in')
-```
-or store the `ScrollObserver` instance to a variable 
+## Features
 
-``` js
-const observer = new ScrollObserver()
-observer.observe(cards, null, 'fade-in');
-```
+*   ✨ **Lightweight**: Minimal footprint with no dependencies.
+*   🎨 **Customizable**: Use your own CSS animations.
+*   🔩 **Easy to Use**: Simple API with straightforward implementation.
+*   🔄 **Animate Once**: Option to trigger animations only once.
+*   🌱 **Lazy Load Images**: Load images only when they come into view.
+*   🎛️ **Observer Options**: Customizable root, threshold, and margin settings.
 
-<br />
+## Technologies Used
 
-### Link to documentation 
-> The full documentation can be found at:
->
-[https://scrolljs.vercel.app](https://scrolljs.vercel.app)
+| Technology                                   | Description                                     | Documentation                               |
+| :------------------------------------------- | :---------------------------------------------- | :------------------------------------------ |
+| JavaScript                                   | Core language for the library                 | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| Intersection Observer API                   | Used for detecting element visibility         | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) |
+| Rollup                                       | Module bundler                                  | [Rollup.js](https://rollupjs.org/guide/en/)      |
+| Docusaurus                                   | Documentation tool                              | [Docusaurus](https://docusaurus.io/)         |
+| CSS                                          | Styling animations                              | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)         |
 
-<br />
+## Contributing
 
+Contributions are welcome! Follow these steps to contribute:
 
-# ChangeLog
-> For a detailed list of changes please see:
-[Changelog](./CHANGELOG.md)
-<br />
+*   🍴 Fork the repository.
+*   🌿 Create a new branch for your feature or bug fix.
+*   💻 Make your changes and commit them with descriptive commit messages.
+*   🚀 Submit a pull request.
 
-# License
-Licensed under the MIT license for open source projects
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Adebayo Muis (Charmingdc) - [https://twitter.com/Charmingdc01](https://twitter.com/Charmingdc01)
+
+[![Readme was generated by Dokugen](https://img.shields.io/badge/Readme%20was%20generated%20by-Dokugen-brightgreen)](https://www.npmjs.com/package/dokugen)
