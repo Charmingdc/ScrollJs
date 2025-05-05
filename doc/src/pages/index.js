@@ -25,6 +25,12 @@ const HomepageHeader = () => {
             to="/docs/intro">
             Get Started
           </Link>
+          
+          <Link
+            className={clsx('button button--lg', styles.button)}
+            to="/docs/category/live-demos">
+            Live Demos
+          </Link>
         </div>
       </div>
     </header>

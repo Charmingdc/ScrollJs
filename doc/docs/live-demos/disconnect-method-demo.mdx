@@ -1,0 +1,28 @@
+---
+sidebar_position: 3
+---
+
+import CodePenEmbed from '@site/src/components/CodePenEmbed';
+
+# `disconnect()` Method Demo
+
+The `disconnect()` method is used to remove **all active observers**, effectively stopping any elements from being watched or animated. This is useful when you want to clean up and prevent further animation triggers.
+
+Simply call `disconnect()` with no arguments to clear all observers currently monitoring elements.
+
+:::tip tip
+For optimal performance and clean teardown, always call `disconnect()` after you're done setting up your `observe()` calls. See the example below 👇
+:::
+
+```js
+// Make sure to import the ScrollObserver class if you're in an ES module environment
+
+const observer = new ScrollObserver();
+
+observer.observe(document.querySelectorAll('.fade-card'), null, 'scrolljs-fade-in-up');
+observer.observe(document.querySelectorAll('.scroll-card'), null, 'scrolljs-scroll-in-up');
+
+observer.disconnect(); // Always call last
+```
+
+By calling `disconnect()` as the final step, you ensure that all observers are properly cleaned up, preventing memory leaks or unexpected animations, especially in dynamic apps or single-page applications. It's the cleanup hero you didn’t know you needed.

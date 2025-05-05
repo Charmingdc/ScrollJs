@@ -5,7 +5,18 @@
  
  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
- 
+:root {
+ --text-color: rgb(30, 30, 30);
+ --custom-shade: rgb(240, 240, 240);
+ --custom-shade-2: rgb(225, 225, 225);
+}
+
+[data-theme='dark'] {
+ --text-color: rgb(240, 240, 240);
+ --custom-shade: rgb(18, 18, 18);
+ --custom-shade-2: rgb(28, 28, 28);
+}
+
  * {
   font-family: 'Figtree', Sans-Serif;
  }
@@ -45,14 +56,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+.buttons > .button:last-of-type {
+ padding-block: .9rem;
+ background-color: var(--custom-shade);
 }
 
 .button {
  width: auto;
  font-size: .9rem;
- padding: 1rem 1.8rem;
- border-radius: 2rem;
+ padding: .8rem 1.8rem;
+ color: var(--text-color);
  background-color: var(--ifm-color-primary);
+ border-radius: 2rem;
 }
 
 

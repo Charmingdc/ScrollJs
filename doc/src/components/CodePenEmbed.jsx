@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const CodePenEmbed = ({ slugHash, title, height = 340 }) => {
+const CodePenEmbed = ({ slugHash, title, height = 540 }) => {
   useEffect(() => {
     const scriptId = 'codepen-script';
     if (!document.getElementById(scriptId)) {

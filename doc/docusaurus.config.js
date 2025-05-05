@@ -97,7 +97,7 @@ const config = {
               },
               {
                 label: 'Playground',
-                to: '/docs/category/playground',
+                to: '/docs/playground',
               }
             ],
           },
