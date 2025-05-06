@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## [2.0.1] - 2025-05-06
+### Changed
+- Fix `v2.0.0` bug (private method typo) and include passing/usage of elements index in the `observe()` method callback function
+
+
+
 ## [2.0.0] - 2025-05-02
 ### Changed
 - Updated `src/scrolljs` to automatically add hidden base classes to elements when built-in animation classes are used
@@ -11,7 +17,6 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Created `src/srcolljs.css` file to define built-in animation classes
 - Created `test` folder for all test files
-
 
 
 

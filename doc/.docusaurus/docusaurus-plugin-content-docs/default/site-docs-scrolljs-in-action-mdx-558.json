@@ -1,0 +1,22 @@
+{
+  "id": "scrolljs-in-action",
+  "title": "ScrollJs in Action",
+  "description": "",
+  "source": "@site/docs/scrolljs-in-action.mdx",
+  "sourceDirName": ".",
+  "slug": "/scrolljs-in-action",
+  "permalink": "/docs/scrolljs-in-action",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ScrollJs Playground",
+    "permalink": "/docs/playground"
+  }
+}

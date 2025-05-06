@@ -1,0 +1,26 @@
+{
+  "id": "playground/create-a-page",
+  "title": "Create a Page",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/playground/create-a-page.md",
+  "sourceDirName": "playground",
+  "slug": "/playground/create-a-page",
+  "permalink": "/docs/playground/create-a-page",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Playground",
+    "permalink": "/docs/category/playground"
+  },
+  "next": {
+    "title": "ScrollJs in Action",
+    "permalink": "/docs/scrolljs-in-action"
+  }
+}

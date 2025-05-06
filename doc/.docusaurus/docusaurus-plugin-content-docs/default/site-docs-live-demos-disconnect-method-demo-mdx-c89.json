@@ -1,0 +1,26 @@
+{
+  "id": "live-demos/disconnect-method-demo",
+  "title": "disconnect() Method Demo",
+  "description": "The disconnect() method is used to remove all active observers, effectively stopping any elements from being watched or animated. This is useful when you want to clean up and prevent further animation triggers.",
+  "source": "@site/docs/live-demos/disconnect-method-demo.mdx",
+  "sourceDirName": "live-demos",
+  "slug": "/live-demos/disconnect-method-demo",
+  "permalink": "/docs/live-demos/disconnect-method-demo",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "unobserve() Method Demo",
+    "permalink": "/docs/live-demos/unobserve-method-demo"
+  },
+  "next": {
+    "title": "ScrollJs Built-in Css Demos",
+    "permalink": "/docs/live-demos/built-in-css-demos"
+  }
+}

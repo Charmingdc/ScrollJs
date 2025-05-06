@@ -1,0 +1,23 @@
+{
+  "id": "getting-started/initialization",
+  "title": "initialization",
+  "description": "",
+  "source": "@site/docs/getting-started/initialization.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/initialization",
+  "permalink": "/docs/getting-started/initialization",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/installation"
+  },
+  "next": {
+    "title": "initialization",
+    "permalink": "/docs/getting-started/initialization"
+  }
+}

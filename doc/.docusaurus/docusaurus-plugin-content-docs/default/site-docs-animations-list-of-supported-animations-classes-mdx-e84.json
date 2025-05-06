@@ -1,0 +1,26 @@
+{
+  "id": "animations/list-of-supported-animations-classes",
+  "title": "List of ScrollJs Built-in CSS Animations",
+  "description": "Looking to skip the hassle of writing custom animation classes? ScrollJs has your back with a set of built-in CSS animations ready to go out of the box! Just plug and play — and yes, they’re smooth as butter.",
+  "source": "@site/docs/animations/list-of-supported-animations-classes.mdx",
+  "sourceDirName": "animations",
+  "slug": "/animations/list-of-supported-animations-classes",
+  "permalink": "/docs/animations/list-of-supported-animations-classes",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using ScrollJs Built-in CSS Animations",
+    "permalink": "/docs/animations/using-built-in-css-animations"
+  },
+  "next": {
+    "title": "Live Demos",
+    "permalink": "/docs/category/live-demos"
+  }
+}

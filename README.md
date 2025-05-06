@@ -2,6 +2,12 @@
 
 A lightweight JavaScript library to trigger animations and effects when elements scroll into view. Control your animations with custom CSS or built-in classes! ✨
 
+> **⚠️ Warning: Do not use v2.0.0**
+>
+> A critical bug in version `v2.0.0` prevents built-in animations from working correctly.  
+> Please upgrade to **v2.0.1** or later for a stable experience.  
+> If you're referencing `v2.0.0` in your documentation, consider updating to reference `latest` or `v2.0.1` instead.
+
 ## Project Overview
 
 ScrollJs is designed to be easy to use, flexible, and performant. It provides a simple API to observe elements and trigger animations as users scroll down the page. Unlike other libraries, ScrollJs allows you to leverage your own CSS animation classes, giving you full control over animation styles.

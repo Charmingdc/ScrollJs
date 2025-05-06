@@ -1,5 +1,7 @@
 /src
 /test
+/doc
+/legacy-docs
 /.git
 /.github
 /.idea
