@@ -3,6 +3,14 @@
 </p>
 
 <h1 align="center"> ScrollJs </h1>
+
+> **⚠️ Warning: Do not use v2.0.0**
+>
+> A critical bug in version `v2.0.0` prevents built-in animations from working correctly.  
+> Please upgrade to **v2.0.1** or later for a stable experience.  
+> If you're referencing `v2.0.0` in your documentation, consider updating to reference `latest` or `v2.0.1` instead.
+
+
 <p align="center"> ScrollJs is a lightweight and easy to use javascript library that allows you to add scroll triggered animations (AOS) with optional callback functions and also lazy load your images to make your website more optimize.
 </p>
 
