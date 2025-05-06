@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const CodePenEmbed = ({ slugHash, title, height = 540 }) => {
+const CodePenEmbed = ({ slugHash, title, height = 540, editable = false }) => {
   useEffect(() => {
     const scriptId = 'codepen-script';
     if (!document.getElementById(scriptId)) {
@@ -11,7 +11,9 @@ const CodePenEmbed = ({ slugHash, title, height = 540 }) => {
       document.body.appendChild(script);
     }
   }, []);
-  
+
+  const editableParam = editable ? 'true' : 'false';
+
   return (
     <div style={{ margin: '1.5rem 0' }}>
       <iframe
@@ -19,7 +21,7 @@ const CodePenEmbed = ({ slugHash, title, height = 540 }) => {
         style={{ width: '100%' }}
         scrolling="no"
         title={title}
-        src={`https://codepen.io/Charmingdc/embed/${slugHash}?default-tab=html&editable=true&theme-id=dark`}
+        src={`https://codepen.io/Charmingdc/embed/${slugHash}?default-tab=html&editable=${editableParam}&theme-id=dark`}
         frameBorder="no"
         loading="lazy"
         allowTransparency="true"
@@ -30,6 +32,6 @@ const CodePenEmbed = ({ slugHash, title, height = 540 }) => {
       </iframe>
     </div>
   );
-}
+};
 
 export default CodePenEmbed;
