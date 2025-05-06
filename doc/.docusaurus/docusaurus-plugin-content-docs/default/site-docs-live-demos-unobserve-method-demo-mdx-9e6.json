@@ -1,0 +1,26 @@
+{
+  "id": "live-demos/unobserve-method-demo",
+  "title": "unobserve() Method Demo",
+  "description": "Here's a demo usage of the unobserve() method, super straight forward to use!",
+  "source": "@site/docs/live-demos/unobserve-method-demo.mdx",
+  "sourceDirName": "live-demos",
+  "slug": "/live-demos/unobserve-method-demo",
+  "permalink": "/docs/live-demos/unobserve-method-demo",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "observe() Method Demos",
+    "permalink": "/docs/live-demos/observe-method-demos"
+  },
+  "next": {
+    "title": "disconnect() Method Demo",
+    "permalink": "/docs/live-demos/disconnect-method-demo"
+  }
+}

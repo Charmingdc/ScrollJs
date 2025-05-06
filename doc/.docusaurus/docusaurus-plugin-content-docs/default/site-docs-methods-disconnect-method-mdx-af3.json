@@ -1,0 +1,26 @@
+{
+  "id": "methods/disconnect-method",
+  "title": "disconnect() Method",
+  "description": "The disconnect() method is your master switch 🔌 — it stops observing all elements that were previously passed to the observe() method.",
+  "source": "@site/docs/methods/disconnect-method.mdx",
+  "sourceDirName": "methods",
+  "slug": "/methods/disconnect-method",
+  "permalink": "/docs/methods/disconnect-method",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "unobserve() Method",
+    "permalink": "/docs/methods/unobserve-method"
+  },
+  "next": {
+    "title": "Built-in animation classes",
+    "permalink": "/docs/category/built-in-animation-classes"
+  }
+}

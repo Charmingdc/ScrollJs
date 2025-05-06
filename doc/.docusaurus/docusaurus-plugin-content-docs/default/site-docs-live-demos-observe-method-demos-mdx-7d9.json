@@ -1,0 +1,26 @@
+{
+  "id": "live-demos/observe-method-demos",
+  "title": "observe() Method Demos",
+  "description": "The observe() method is the core of ScrollJs, allowing you to trigger animations when elements enter the viewport. Below are two usage examples:",
+  "source": "@site/docs/live-demos/observe-method-demos.mdx",
+  "sourceDirName": "live-demos",
+  "slug": "/live-demos/observe-method-demos",
+  "permalink": "/docs/live-demos/observe-method-demos",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Live Demos",
+    "permalink": "/docs/category/live-demos"
+  },
+  "next": {
+    "title": "unobserve() Method Demo",
+    "permalink": "/docs/live-demos/unobserve-method-demo"
+  }
+}

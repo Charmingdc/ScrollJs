@@ -1,0 +1,118 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "animations/list-of-supported-animations-classes",
+              "path": "/docs/animations/list-of-supported-animations-classes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "animations/using-built-in-css-animations",
+              "path": "/docs/animations/using-built-in-css-animations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/initialization",
+              "path": "/docs/getting-started/initialization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/installation",
+              "path": "/docs/getting-started/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "live-demos/built-in-css-demos",
+              "path": "/docs/live-demos/built-in-css-demos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "live-demos/disconnect-method-demo",
+              "path": "/docs/live-demos/disconnect-method-demo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "live-demos/observe-method-demos",
+              "path": "/docs/live-demos/observe-method-demos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "live-demos/unobserve-method-demo",
+              "path": "/docs/live-demos/unobserve-method-demo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "methods/disconnect-method",
+              "path": "/docs/methods/disconnect-method",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "methods/observe-method",
+              "path": "/docs/methods/observe-method",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "methods/unobserve-method",
+              "path": "/docs/methods/unobserve-method",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "playground",
+              "path": "/docs/playground",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "scrolljs-in-action",
+              "path": "/docs/scrolljs-in-action",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/getting-started",
+              "path": "/docs/category/getting-started",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/core-methods",
+              "path": "/docs/category/core-methods",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/built-in-animation-classes",
+              "path": "/docs/category/built-in-animation-classes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/live-demos",
+              "path": "/docs/category/live-demos",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

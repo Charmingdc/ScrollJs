@@ -1,0 +1,23 @@
+{
+  "id": "methods/unobserve",
+  "title": "unobserve",
+  "description": "",
+  "source": "@site/docs/methods/unobserve.mdx",
+  "sourceDirName": "methods",
+  "slug": "/methods/unobserve",
+  "permalink": "/docs/methods/unobserve",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "unobserve-method",
+    "permalink": "/docs/methods/unobserve-method"
+  },
+  "next": {
+    "title": "Live Demos",
+    "permalink": "/docs/category/live-demos"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "getting-started/create-a-page",
+  "title": "Create a Page",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/getting-started/create-a-page.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/create-a-page",
+  "permalink": "/docs/getting-started/create-a-page",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/installation"
+  },
+  "next": {
+    "title": "ScrollJs Methods",
+    "permalink": "/docs/category/scrolljs-methods"
+  }
+}

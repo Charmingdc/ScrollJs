@@ -56,9 +56,14 @@ class ScrollObserver {
     }, this.options);
 
     // Loop through all elements and observe each of them
-    elements.forEach(element => {
-      observer.observe(element);
-    });
+   elements.forEach(element => {
+     observer.observe(element);
+
+     // Ensure element starts hidden if using scrolljs- animation class
+     if (animationClass && animationClass.startsWith('scrolljs-')) {
+      this._addHiddenClass(element, animationClass);
+     }
+   });
 
     // Push both the observer and elements it's observing to the observers array
     this.observers.push({ observer, elements });
