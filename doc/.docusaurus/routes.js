@@ -108,21 +108,16 @@ export default [
     exact: true
   },
   {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '3d7'),
-    exact: true
-  },
-  {
     path: '/docs',
-    component: ComponentCreator('/docs', '35b'),
+    component: ComponentCreator('/docs', '274'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'd80'),
+        component: ComponentCreator('/docs', 'e15'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'ddb'),
+            component: ComponentCreator('/docs', 'be1'),
             routes: [
               {
                 path: '/docs/animations/list-of-supported-animations-classes',
@@ -223,12 +218,6 @@ export default [
               {
                 path: '/docs/playground',
                 component: ComponentCreator('/docs/playground', '23e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/scrolljs-in-action',
-                component: ComponentCreator('/docs/scrolljs-in-action', '5e2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

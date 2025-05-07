@@ -105,10 +105,6 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'X (Twitter)',
                 href: 'https://x.com/Charmingdc01',
               },
@@ -123,7 +119,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ScrollJs, Inc. Built with '♥️' & Docusaurus by Charmingdc`,
+        copyright: `Copyright © ${new Date().getFullYear()} ScrollJs. Maintained by Charmingdc`
       },
       prism: {
         theme: prismThemes.github,

@@ -76,11 +76,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "scrolljs-in-action",
-              "path": "/docs/scrolljs-in-action",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "/category/getting-started",
               "path": "/docs/category/getting-started",
               "sidebar": "tutorialSidebar"

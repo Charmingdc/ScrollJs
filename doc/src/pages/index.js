@@ -12,7 +12,7 @@ const HomepageHeader = () => {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.heroSection}>
-      <LatestUpdateModal update='v2.0.0 is out with built-in css support 🎉' />
+      <LatestUpdateModal update='ScrollJs latest version is out with built-in css animations support 🎉' />
       
       <div className={styles.container}>
         <Heading as="h1" className="hero__title">

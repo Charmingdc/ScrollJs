@@ -242,24 +242,17 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/markdown-page-3d7": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
-    "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
-    },
-    "content": "content---markdown-page-393-028"
-  },
-  "/docs-35b": {
+  "/docs-274": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-d80": {
+  "/docs-e15": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-ddb": {
+  "/docs-be1": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/animations/list-of-supported-animations-classes-d6e": {
@@ -329,10 +322,6 @@
   "/docs/playground-23e": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-playground-70-e-f75"
-  },
-  "/docs/scrolljs-in-action-5e2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-scrolljs-in-action-558-052"
   },
   "/-2e1": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

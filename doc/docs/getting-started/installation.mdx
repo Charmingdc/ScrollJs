@@ -34,6 +34,11 @@ Then, open your terminal and run:
   </TabItem>
 </Tabs>
 
+:::danger Important Notice: Do Not Use v2.0.0
+Version `2.0.0` contains a critical bug that breaks built-in CSS animations and has been **deprecated**.  
+Whether you're installing via a package manager or using a CDN, make sure to use version `2.0.1` or later to ensure proper functionality.
+:::
+
 Once installed, **ScrollJs** is ready to use in your project.
 
 ## 2. Use via CDN
@@ -47,12 +52,12 @@ Choose between two file formats:
 <Tabs>
   <TabItem value="es-module" label="ES Module" default>
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.0/dist/scroll.esm.min.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.1/dist/scroll.esm.min.js" type="module"></script>
     ```
   </TabItem>
   <TabItem value="commonjs" label="CommonJs">
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.0/dist/scroll.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.1/dist/scroll.umd.min.js"></script>
     ```
   </TabItem>
 </Tabs>
@@ -61,13 +66,13 @@ Choose between two file formats:
 For broader browser support, you can add both formats conditionally:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.0/dist/scroll.esm.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.1/dist/scroll.esm.min.js"></script>
 
-<script nomodule src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.0/dist/scroll.umd.min.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@charmingdc/scrolljs@2.0.1/dist/scroll.umd.min.js"></script>
 ```
 
 :::info **info**
-You can replace `2.0.0` with your preferred version. Check the [CHANGELOG.md](https://github.com/Charmingdc/ScrollJs/CHANGELOG.md) for version updates.
+You can replace `2.0.1` with your preferred version. Check the [CHANGELOG.md](https://github.com/Charmingdc/ScrollJs/blob/main/CHANGELOG.md) for version updates.
 :::
 
 
