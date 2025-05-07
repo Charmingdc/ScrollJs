@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="A lightweight scroll triggered animation library">
       <HomepageHeader />
       
       <main>
