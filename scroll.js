@@ -23,7 +23,7 @@ class ScrollObserver {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           if (animationClass) {
-            if (animationClass.startsWith('scrolljs-')) {
+           if (animationClass.startsWith('scrolljs-')) {
               this._removeHiddenClass(entry.target, animationClass);
             }
 

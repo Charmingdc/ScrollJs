@@ -1,0 +1,49 @@
+---
+sidebar_position: 1
+---
+
+# Using `ScrollJs` Built-in CSS Animations
+
+Using `ScrollJs` built-in CSS animations is pretty straightforward. You have two options to choose from when setting it up:
+
+- **Using Link `href`**
+- **Importing (ES Module)**
+
+## 1. Using Link `href`:
+
+You can link the CSS file directly in your HTML file if you are using the package in a traditional way: 
+
+  ```html  
+  <link href="https://www.npmjs.com/package/@charmingdc/scrolljs/dist/scrolljs.css" rel="stylesheet" /> 
+  
+ ``` 
+ 
+---
+
+## 2. Importing (ES Module): 
+If you're using a JavaScript framework, bundler (like Webpack, Rollup, etc.), or ES modules, you can import the CSS file directly into your JavaScript code:  
+  ```js  
+  import '@charmingdc/scrolljs/dist/scrolljs.css';  
+  ```  
+  This ensures that the `ScrollJs` styles are included automatically when you bundle your JavaScript code.
+
+
+## Where to Find the CSS File 📂
+The CSS file (`scrolljs.css`) is located in the `dist` folder of the `@charmingdc/scrolljs` package. After installing via npm, you can access the CSS in your `node_modules` directory. If you're using a bundler or module system, the import path will look like:  
+  ```js  
+  import '@charmingdc/scrolljs/dist/scrolljs.css';  
+  ```
+
+With these two methods, you can quickly add `ScrollJs` built-in CSS animations to your project, without having to manually set up the animation classes. 🚀
+
+
+
+## How to Use the Built-in Animation Classes
+
+There's no extra configuration, just pass the animation class as the third parameter in the `observe()` method.
+
+```js
+ observer.observe(document.querySelectorAll('.my-card'), null, 'scrolljs-fade-in-up');
+```
+
+[**→ See the list of currently supported ScrollJs animations classes**](./list-of-supported-animations-classes)

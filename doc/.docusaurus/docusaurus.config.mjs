@@ -111,10 +111,6 @@ export default {
           "title": "More",
           "items": [
             {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
               "label": "X (Twitter)",
               "href": "https://x.com/Charmingdc01"
             },
@@ -129,7 +125,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 ScrollJs, Inc. Built with '♥️' & Docusaurus by Charmingdc"
+      "copyright": "Copyright © 2025 ScrollJs. Maintained by Charmingdc"
     },
     "prism": {
       "theme": {

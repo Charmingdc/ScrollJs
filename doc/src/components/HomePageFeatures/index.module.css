@@ -1,0 +1,46 @@
+.featureBox {
+ width: 20rem;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ text-align: left;
+ padding: 1rem 2rem;
+ background-color: var(--custom-shade);
+ border-radius: 1rem;
+ margin: 1rem;
+}
+
+.featureBox > div {
+ width: 3.5rem;
+ height: 3.5rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.4rem;
+ background-color: var(--custom-shade-2);
+ opacity: 0.8;
+ border-radius: 1rem;
+ margin-block: 1rem;
+}
+
+.featureBox > h3 {
+ font-size: 1.1rem;
+ margin-bottom: .5rem;
+}
+.featureBox > p {
+ opacity: .6;
+ font-size: .9rem;
+}
+
+.featureContainer {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding-block: 1rem;
+ margin-top: 1.5rem;
+}

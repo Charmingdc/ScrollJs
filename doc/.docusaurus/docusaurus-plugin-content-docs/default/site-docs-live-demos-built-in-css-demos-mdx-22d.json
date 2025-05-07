@@ -1,7 +1,7 @@
 {
   "id": "live-demos/built-in-css-demos",
-  "title": "ScrollJs Built-in Css Demos",
-  "description": "",
+  "title": "ScrollJs Built-in Animation Demo",
+  "description": "Explore our built-in CSS animations in action, no setup required! Edit the code below, hit Rerun, and see how each class brings elements to life.",
   "source": "@site/docs/live-demos/built-in-css-demos.mdx",
   "sourceDirName": "live-demos",
   "slug": "/live-demos/built-in-css-demos",

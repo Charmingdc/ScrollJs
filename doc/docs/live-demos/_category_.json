@@ -1,0 +1,8 @@
+{
+  "label": "Live Demos",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Interactive demos showcasing how to use ScrollJs methods and built-in animations in real-world scenarios."
+  }
+}

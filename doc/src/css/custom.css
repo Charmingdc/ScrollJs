@@ -1,0 +1,36 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* Updated to match logo theme (blue-based) */
+
+:root {
+  --ifm-font-family-base: 'Poppins', sans-serif;
+  --ifm-color-primary: #0028ff; /* Main brand blue */
+  --ifm-color-primary-dark: #0024e6; /* Slightly darker for hover effects */
+  --ifm-color-primary-darker: #001fcc; /* Even darker shade */
+  --ifm-color-primary-darkest: #0017a3; /* Deepest tone for high contrast */
+  --ifm-color-primary-light: #446dff; /* Light blue used in logo */
+  --ifm-color-primary-lighter: #6c8eff; /* Softer blue for subtle accents */
+  --ifm-color-primary-lightest: #8daeff; /* Lightest tint for highlights */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Highlight line background in light mode */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Updated dark theme to stay consistent with brand blue while improving contrast */
+[data-theme='dark'] {
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-heading-font-family: 'Poppins', sans-serif;
+  --ifm-color-primary: #446dff; /* Slightly lighter base for dark backgrounds */
+  --ifm-color-primary-dark: #3c61e6;
+  --ifm-color-primary-darker: #3557cc;
+  --ifm-color-primary-darkest: #2a47a3;
+  --ifm-color-primary-light: #6c8eff;
+  --ifm-color-primary-lighter: #8daeff;
+  --ifm-color-primary-lightest: #afcfff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Highlight line background in dark mode */
+}

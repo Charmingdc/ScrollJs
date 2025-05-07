@@ -1,0 +1,10 @@
+.updateModal {
+ width: 100vw;
+ height: 2.5rem;
+ display: flex;
+ align-items: center;
+ text-align: left;
+ color: rgb(240, 240, 240);
+ background-color: var(--ifm-color-primary);
+ margin-block: -2rem 4rem;
+}

@@ -1,0 +1,48 @@
+---
+sidebar_position: 2
+---
+
+# `unobserve()` Method
+
+The `unobserve()` method is useful when you want to **stop observing a specific element** — even if it's part of a group being observed (e.g., elements with the same class name).
+
+It accepts **one parameter**, which is the exact DOM element you want to stop observing.
+
+### Syntax
+
+```js
+observer.unobserve(element);
+```
+
+It's super straightforward: just call the method on your `ScrollObserver` instance and pass in the element you want to exclude from observation.
+
+---
+
+### Real-World Example: Skipping One Special Element
+
+Let’s say you have multiple `.card` elements that animate on scroll, but you want to exclude one with a special ID:
+
+```js
+const allCards = document.querySelectorAll('.card');  
+// Select all elements with the class "card"
+
+const promoCard = document.querySelector('#promo');  
+// Select the one card you want to exclude
+
+observer.observe(allCards, null, 'fadeinLeft');  
+// Observe all cards with the same animation
+
+observer.unobserve(promoCard);  
+// Exclude just the promo card from being animated
+```
+
+This can be especially useful when:
+- You want a hero section to stay static.
+- You’re conditionally animating based on user interaction.
+- Some elements already have animations or behaviors and shouldn't be duplicated.
+
+---
+
+### Keep It Flexible
+
+Whether you're building something dynamic or just want full control over what animates and when, `unobserve()` gives you that power. Use it wisely — and creatively!
