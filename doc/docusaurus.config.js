@@ -18,6 +18,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  
+  metadata: [
+    { name: 'google-site-verification', content: 'W4ftn-h9Uvl-fuQS3RmORDm1uplA51wDUfzwiysiJuw' },
+  ],
 
   presets: [
     [
